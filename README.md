@@ -6,7 +6,7 @@ GitHub Action that runs ktlint on your project and then uses [ReviewDog](https:/
 
 In your action yaml, add this step:
 
-```
+```yaml
 - uses: VEVO/action-ktlint@v1
   with:
     githubToken: ${{ secrets.GITHUB_TOKEN }}
