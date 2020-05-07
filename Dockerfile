@@ -1,7 +1,7 @@
 FROM openjdk:11.0.1-jdk-slim-stretch
 
 RUN apt-get update \
-    && apt-get -y install curl \
+    && apt-get -y install curl git \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
