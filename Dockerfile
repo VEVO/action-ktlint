@@ -3,7 +3,7 @@ FROM openjdk:11.0.1-jdk-slim-stretch
 ARG REVIEWDOG_VERSION=v0.9.17
 
 RUN apt-get update \
-    && apt-get -y install curl git \
+    && apt-get -y install curl \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
