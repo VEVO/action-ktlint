@@ -11,7 +11,7 @@ RUN curl -sSLO https://github.com/pinterest/ktlint/releases/download/0.35.0/ktli
           && chmod a+x ktlint \
           && mv ktlint /bin
 
-RUN curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/$REVIEWDOG_VERSION/install.sh -d $REVIEWDOG_VERSION | sh -s
+RUN curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/$REVIEWDOG_VERSION/install.sh | sh -s $REVIEWDOG_VERSION
 
 COPY entrypoint.sh /bin/entrypoint.sh
 RUN chmod +x /bin/entrypoint.sh
