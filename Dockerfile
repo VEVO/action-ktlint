@@ -7,7 +7,7 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN curl -sSLO https://github.com/pinterest/ktlint/releases/download/0.38.0/ktlint \
+RUN curl -sSLO https://github.com/pinterest/ktlint/releases/download/0.40.0/ktlint \
           && chmod a+x ktlint \
           && mv ktlint /bin
 
