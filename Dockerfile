@@ -1,4 +1,4 @@
-FROM openjdk:11.0.16-slim-buster
+FROM openjdk:11.0.16-jdk-slim-buster
 
 ARG REVIEWDOG_VERSION=v0.9.17
 
